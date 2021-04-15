@@ -1,0 +1,52 @@
+.login{
+    background:#723e26;
+    width: 35vw;
+    height: 30vw;
+    margin: auto;
+    text-align: left;
+    color: white;
+    border-top: 7px solid #ed9d56;
+}
+
+h3{
+    color: white;
+    margin: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 15px 20px;
+    margin: 5px 45px;
+    box-sizing: border-box;
+    background-color:#f5e3bb;  
+}
+
+input[type=password] {
+    width: 80%;
+    padding: 15px 20px;
+    margin: 5px 45px;
+    box-sizing: border-box;
+    background-color: #f5e3bb;  
+}
+
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 30px; 
+} 
+
+.icon { 
+    padding: 20px; 
+    color: black; 
+    min-width: 50px; 
+    text-align: right; 
+    margin-left: 30px;
+} 

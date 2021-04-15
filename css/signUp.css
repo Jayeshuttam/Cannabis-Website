@@ -1,0 +1,40 @@
+.signUp{
+    border: 3px solid #D6A88F;
+    background:#ffffff00;
+    width: 45vw;
+    height: 40vw;
+    margin: auto;
+    text-align: left;
+    color: black;
+    padding: 15px 20px;
+}
+
+h1,p{
+    
+    margin-top: 7px;
+}
+
+input[type=text] {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 5px 45px;
+    box-sizing: border-box;
+    border: solid #cc6832 1px;
+    background-color:#f5e3bb;  
+}
+
+input[type=password] {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 5px 45px;
+    box-sizing: border-box;
+    border: solid #cc6832 1px;
+    background-color: #f5e3bb;  
+}
+
+.btnContainer button{
+    width: 100px;
+    height: 50px;
+    background-color:rgb(240, 170, 120);
+    margin: 5px ;
+}

@@ -1,0 +1,31 @@
+.product-titles h2,h3{
+    text-align: center;
+    margin-bottom: 5vw;
+
+}
+.product-block{
+    margin: auto;
+    width: 80%;
+    color:ghostwhite;
+}
+#price{
+font-size: x-large;
+color: #008000  ;
+}
+.product-content{
+    display: inline-block;
+    width: 50%;
+    margin-left: 1.6vw;
+    vertical-align: top;
+}
+.product-content input[type="submit" i]{
+    width: 45%;
+    margin-top: 3vw;
+    height: 3vw;
+    font-size: 1.0rem;
+    border-radius: 2vw;
+}
+.product-img{
+    width:40%;
+    display: inline;
+}

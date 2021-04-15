@@ -1,0 +1,109 @@
+ul.products>li {
+    width: 370px;
+    display: inline-block;
+    text-align: center;
+    background-color: #282828;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #585858;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+h4 a {
+    color: #D6A88F;
+    text-decoration: none;
+}
+
+span.currency-symbol {
+    font-size: 15px;
+    position: relative;
+   
+    color: pink;
+}
+
+span.price {
+    color: pink;
+    margin-top: 21px;
+}
+
+ul.products li img {
+    width: 350px;
+    height: 300px;
+}
+ ul.products img {
+     padding-top: 2px;
+ }
+span.product-type {
+    color: white;
+    text-decoration: underline;
+}
+div.product_modify_links {
+    width: 100%;
+   
+    background: #585858;
+    
+}
+ul.product_modify_ul {
+    display: inline-block;
+    width: 100%;
+    height: 4vw;
+    /* vertical-align: middle; */
+    text-align: center;
+    margin: auto;
+}
+.product_modify_li{
+    color: #D6A88F;
+    display: inline-block;
+    width: 50%;
+    /* height: 4vw; */
+    vertical-align: middle;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    padding-top: 1.2vw;
+}
+
+li.product_modify_li>a{
+    color: #D6A88F;
+    text-decoration: none;
+}
+li.product_modify_li:hover{
+    color: #585858;
+    text-decoration: none;
+    border-radius: 1vw;
+}
+.delete:hover{
+    color: #585858;
+    text-decoration: none;
+}
+.edit:hover{
+    color: #585858;
+    text-decoration: none;
+}
+
+.clearfix{
+font-size: 24px;
+margin: 15px;
+float: left;
+}
+
+.search-form{
+float: right;
+
+}
+
+.search-form .form-control{
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+   
+}
+.search-form .btn{
+    width: 90px;
+    height: 38px;
+    background-color: #d5ded4;
+    font-size: 17px;
+}

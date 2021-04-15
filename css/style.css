@@ -1,0 +1,1265 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype'), url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.eot');
+    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Bold.woff2') format('woff2'), url('../fonts/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins-Bold.ttf') format('truetype'), url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Medium.woff2') format('woff2'), url('../fonts/Poppins-Medium.woff') format('woff'), url('../fonts/Poppins-Medium.ttf') format('truetype'), url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-SemiBold.woff2') format('woff2'), url('../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.ttf') format('truetype'), url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.eot');
+    src: url('../fonts/poppins-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/poppins-light-webfont.woff2') format('woff2'), url('../fonts/poppins-light-webfont.woff') format('woff'), url('../fonts/poppins-light-webfont.ttf') format('truetype'), url('../fonts/poppins-light-webfont.svg#poppinslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.features {
+    display: block;
+    width: 32%;
+    margin: 5px;
+    float: left;
+}
+
+div#navbarSupportedContent {
+    width: 70%;
+    display: inline-grid;
+    position: relative;
+    top: -85px;
+    margin-left: 31%;
+}
+
+ul.navbar-nav.ml-md-auto {
+    display: inline-flex;
+    list-style: none;
+}
+
+li.nav-item {
+    padding-left: 7%;
+    border: 2px solid #D6A88F;
+}
+
+li.active, li:hover {
+    background-color: #D6A88F;
+}
+
+:visited {
+    text-decoration: none;
+}
+
+/* Sprite Defined Here */
+
+.sprite {
+    background: url(../img/sprite.png);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins';
+    min-height: 100%;
+    margin-bottom: 50px;
+}
+
+.wrapper .navbar {
+    position: relative;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.logo-bg {
+    position: absolute;
+    z-index: -1;
+    left: -130px;
+    top: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.logo-img, .custom-nav {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.wrapper .navbar-light .navbar-nav .nav-link, .signup-btn {
+    color: #000;
+    padding: 5px 26px;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.signup-btn {
+    border-left: 1px solid #000;
+}
+
+.signup-btn:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.secondary-btn {
+    padding: 10px 45px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    color: #000;
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover, .primary-btn:hover {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    position: relative;
+    z-index: -2;
+}
+
+.signin-btn {
+    padding-right: 12px;
+}
+
+.banner-left {
+    padding: 30px 20px 20px;
+}
+
+.banner-heading {
+    font-size: 27px;
+    font-weight: 600;
+    color: #000;
+}
+
+.banner-desc {
+    margin: 50px 60px 36px 0;
+    font-size: 17px;
+}
+
+.email-field {
+    border-radius: 0 35px 35px 35px;
+    border: none;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    padding: 18px 26px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.form {
+    position: relative;
+    max-width: 510px;
+}
+
+.email-field::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.email-field::-moz-placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.email-field:-ms-input-placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.email-field::-ms-input-placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.email-field::placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.primary-btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background: rgba(214, 168, 144, 1);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#buttonSubscribe {
+    visibility: hidden;
+}
+
+.email-common-btn {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+}
+
+.phone-ctn {
+    position: relative;
+    width: 100%;
+}
+
+.phone-img {
+    position: absolute;
+    left: 100px;
+    top: -40px;
+}
+
+.plane-img {
+    position: absolute;
+    top: 450px;
+    left: -200px;
+    z-index: -1;
+}
+
+/* Banner CSS Endss Here */
+
+/* Section 2 Css Starts Here */
+
+.section2 {
+    margin-top: 100px;
+    padding: 0 15px;
+}
+
+.sec2-left {
+    padding: 20px;
+    margin-top: 100px;
+    background: url('../img/second-sec-bg.png');
+    background-repeat: no-repeat;
+}
+
+.review {
+    max-width: 261px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px 30px 10px 20px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    margin: 20px 0px;
+}
+
+.sub-heading {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.sub-desc {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0px;
+}
+
+.review-img {
+    border-radius: 50px;
+    border: 4px solid #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.review-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.user-name {
+    padding: 30px 20px 0;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.review2 {
+    float: right;
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px);
+}
+
+.review3 {
+    float: right;
+    -webkit-transform: translate(50px, 50%);
+    -ms-transform: translate(50px, 50%);
+    transform: translate(50px, 50%);
+}
+
+.sec2-right {
+    margin-top: 350px;
+    padding-left: 110px;
+}
+
+.sec2-heading {
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.sec2-desc {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.quote {
+    background: #FBF6F4;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/* Sprite For Quote Img */
+
+.quote-img {
+    width: 31px;
+    height: 29px;
+    background-position: -172px -68px;
+}
+
+/* Section 2 Css Ends Here */
+
+/* Newsletter page 2 Css Starts here */
+
+.navbar-bg {
+    background: rgba(214, 168, 144, 1);
+    -webkit-box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+}
+
+p.banner-desc {
+    color: white;
+}
+
+p.sec2-desc {
+    color: white;
+}
+
+.navbar-bg .wrapper .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+}
+
+.navbar-bg .wrapper .navbar-light .navbar-nav .nav-link.active:after {
+    width: 30px;
+}
+
+.navbar-bg .wrapper .navbar-light .navbar-nav .nav-link:after {
+    content: '';
+    width: 0px;
+    bottom: 5px;
+    left: 26px;
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.navbar-bg .wrapper .navbar-light .navbar-nav .nav-link:hover::after {
+    width: 30px;
+}
+
+.congrats-sec {
+    background: #fbf6f3;
+    font-family: 'Poppins';
+    margin-top: -50px;
+    padding: 30px;
+}
+
+.congrats-sec .common-desc {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.congrats-sec span {
+    font-weight: 500;
+}
+
+.brief2 {
+    font-family: 'poppinslight';
+}
+
+.dropdown .nav-link {
+    color: #fff;
+    padding: 0 20px;
+}
+
+.profile-pic {
+    border-radius: 50px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+}
+
+.sec1-left, .counter {
+    padding-left: 10px;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.sec1-left .banner-heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+.sec1-left .banner-desc {
+    margin-top: 20px;
+}
+
+.sec-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Sprite Images for Newsletter here */
+
+.support, .newsletters, .readers {
+    width: 30px;
+    height: 30px;
+}
+
+.readers {
+    background-position: -18px -67px;
+}
+
+.newsletters {
+    background-position: -122px -67px;
+}
+
+.support {
+    background-position: -69px -67px;
+}
+
+/* Newsletter page 2 Css Ends here */
+
+/* Section2 Counter Css starts here */
+
+.common-heading {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.common-desc {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.counter-heading {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 20px 0 0;
+}
+
+.counter-feature {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.counter {
+    margin-top: 100px;
+}
+
+.counter-content {
+    padding: 20px;
+}
+
+/* Section2 Counter Css Ends here */
+
+/* Section3 Css Starts here */
+
+.section3 {
+    margin-top: 130px;
+}
+
+.sec3-left, .sec3-right {
+    padding: 20px;
+}
+
+.sec3-right {
+    margin-top: 100px;
+}
+
+/* Section3 Css Ends here */
+
+/* Section4 Email Css Starts here */
+
+.section4 {
+    text-align: center;
+    background: #FBF6F4;
+    border-radius: 25px;
+    padding: 80px 80px 60px;
+    margin-top: 100px;
+}
+
+.section4 .primary-btn {
+    margin-top: 20px;
+}
+
+/* Section4 Email Css Ends here */
+
+/* Contact Page CSS Starts here */
+
+.sec-contact {
+    margin-top: 60px;
+}
+
+.contact-right {
+    background: url('../img/contact-bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-heading {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.common-desc a {
+    color: #D6A88F;
+}
+
+.contact-left {
+    padding-left: 20px;
+}
+
+.contact-form {
+    padding: 30px 50px 0 100px;
+}
+
+.contact-form .contact-submit-btn {
+    width: 60%;
+}
+
+.contact-input-field {
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    outline: none;
+}
+
+.textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form>div {
+    position: relative;
+}
+
+.contact-form div>.label {
+    position: absolute;
+    left: 40px;
+    top: 11px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.contact-input-field:focus~.label, .contact-input-field:valid~.label {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background: #fff;
+    padding: 0 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(251, 246, 244, 1)), color-stop(50%, rgba(255, 255, 255, 1)));
+    background: -o-linear-gradient(top, rgba(251, 246, 244, 1) 50%, rgba(255, 255, 255, 1) 50%);
+    background: linear-gradient(180deg, rgba(251, 246, 244, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+
+/* Contact Page CSs Ends here */
+
+/* Details Page Css Starts Here */
+
+.section-details {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.details-head .common-heading {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.publish-date {
+    opacity: 0.5;
+}
+
+.padding {
+    padding: 15px 0;
+}
+
+.border-bottom {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.details-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.share-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding-right: 12px;
+}
+
+.social-icons {
+    margin-bottom: 100px;
+}
+
+/* Sprite Images for Details page here */
+
+.facebook, .twitter, .linkedin, .pinterest {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.facebook {
+    background-position: -17px -18px;
+}
+
+.twitter {
+    background-position: -120px -18px;
+}
+
+.pinterest {
+    background-position: -170px -18px;
+}
+
+.linkedin {
+    background-position: -67px -18px;
+}
+
+/* Details Page Css Ends Here */
+
+/* NewsLetters Page Css Starts Here */
+
+.newsletter-section .common-heading {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.item {
+    padding: 15px 15px 0;
+    border: 1px solid #C0C0C0;
+    border-radius: 12px;
+    margin: 10px;
+    min-height: 345px;
+}
+
+.news-desc {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.date {
+    background: #D6A88F;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 6px;
+    font-weight: 600;
+}
+
+.newsletter-section .row {
+    margin: 20px 0;
+}
+
+.newsletter-section .row .column {
+    padding: 0;
+}
+
+.read-more {
+    color: #D6A88F;
+}
+
+.read-more:hover {
+    color: #D6A88F;
+}
+
+.custom-page {
+    margin: 20px auto 0;
+}
+
+.custom-page .pagination .page-item .page-link {
+    border: 0px;
+    color: #000;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.custom-page .pagination .page-item.active .page-link {
+    background: #D6A88F;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-top: 3px;
+}
+
+/* Sprite Images for Pagination Arrows*/
+
+.back-arrow, .next-arrow {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.back-arrow {
+    background-position: -223px -26px;
+}
+
+.next-arrow {
+    background-position: -223px -72px;
+}
+
+/* NewsLetters Page Css Ends Here */
+
+/* Earned Points Page Css Starts Here */
+
+.earned-section .common-heading, .ambassador-section .common-heading {
+    font-size: 48px;
+}
+
+.earned-section .contact-input-field {
+    max-width: 383px;
+    margin-top: 20px;
+}
+
+.earned-section .contact-input-field::placeholder {
+    opacity: 0.7;
+}
+
+.earned-section div img {
+    margin-top: 20px;
+}
+
+/* Earned Points Page Css Ends Here */
+
+/* Ambassador Page Css Starts Here */
+
+.highlight {
+    color: #D6A88F;
+}
+
+.desc {
+    margin: 50px 0;
+}
+
+.img-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.img-referral {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.img-section .row {
+    margin: 0;
+}
+
+.col-down {
+    margin-top: 120px;
+}
+
+.ambassador-section .counter-heading {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.bullets {
+    list-style-type: none;
+}
+
+.bullets li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.bullets li::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #D6A88F;
+    border-radius: 50px;
+    left: 0;
+    top: 6px;
+}
+
+/* Ambassador Page Css Ends Here */
+
+.nav-link {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    right: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    background-color: #D6A88F;
+    height: 350px;
+}
+
+.LowerFooter a {
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+.backontop {
+    float: right;
+    margin-top: 20px;
+}
+
+.footerCatalog {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.footerThumbnail1 {
+    position: relative;
+    left: 50px;
+    bottom: -25px;
+}
+
+.footerThumbnail2 {
+    float: left;
+    position: relative;
+    left: 500px;
+    bottom: 250px;
+    bottom: 150px;
+}
+
+.footerThumbnail2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerThumbnail2 a:hover {
+    color: chocolate;
+}
+
+.footerThumbnail3 {
+    float: left;
+    position: relative;
+    left: 650px;
+    bottom: 150px;
+}
+
+.SocialLinks {
+    float: right;
+    position: relative;
+    right: 100px;
+}
+
+.LowerFooter {
+    margin-top: 0px;
+    position: relative;
+    bottom: -105px;
+    left: -570px;
+    width: 135%;
+}
+
+.back {
+    margin: auto;
+    padding-left: 50px
+}
+
+.subscribe {
+    position: relative;
+    left: -250px;
+    bottom: -120px;
+}
+
+#textemail {
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:1260px) {
+    .wrapper .navbar-light .navbar-nav .nav-link, .signup-btn {
+        padding: 5px 15px;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .wrapper .navbar-light .navbar-nav .nav-link, .signup-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .signin {
+        padding: 6px 25px;
+    }
+    .review2, .review3 {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    .banner-container, .section2 {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .sec1-left .banner-heading, .counter, .section3, .section4 {
+        margin-top: 40px;
+    }
+    .section2 {
+        margin-top: 0px;
+    }
+    .custom-nav {
+        position: absolute;
+        top: 0px;
+        padding-top: 110px;
+        width: 100%;
+        z-index: 2;
+        background: rgba(214, 168, 144, 1);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .plane-img {
+        display: none;
+    }
+    .wrapper .navbar-light .navbar-nav .nav-link {
+        padding: 10px 25px;
+    }
+    .wrapper .navbar-light .navbar-nav .nav-link:hover {
+        background: #fff;
+        color: rgba(214, 168, 144, 1);
+    }
+    .signin-btn {
+        text-align: center;
+        padding: 10px;
+    }
+    .signup-btn {
+        border-left: 0px;
+    }
+    .sec2-left {
+        background: none;
+    }
+    .sec2-right {
+        padding-left: 50px;
+    }
+    .banner-heading {
+        font-size: 45px;
+    }
+    .review3 {
+        float: left;
+        -webkit-transform: translatex(0px);
+        -ms-transform: translatex(0px);
+        transform: translatex(0px);
+    }
+    .review2 {
+        -webkit-transform: translatex(0px);
+        -ms-transform: translatex(0px);
+        transform: translatex(0px);
+    }
+    .section2 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .sec2-right {
+        margin-top: 120px;
+    }
+    .sec2-left {
+        margin-top: 20px;
+    }
+    .counter-heading {
+        font-size: 30px;
+    }
+    .counter-feature {
+        font-size: 28px;
+    }
+    .contact-left {
+        text-align: center;
+        padding: 0;
+    }
+    .contact-right {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .phone-img {
+        position: relative;
+        display: none;
+    }
+    .signup-btn {
+        border-left: 0px;
+    }
+    .review3 {
+        float: left;
+    }
+    .sub-left {
+        padding-left: 15px;
+    }
+    .sec2-right {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .review2, .review3 {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    .section2, .sec2-left {
+        margin-top: 20px;
+    }
+    .banner-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .sub-sec {
+        padding: 0 50px;
+    }
+    .counter-content {
+        text-align: center;
+    }
+    .sec1-left .banner-heading, .common-heading {
+        font-size: 30px;
+    }
+    .section4 {
+        padding: 20px 20px 10px;
+    }
+    .item {
+        min-height: auto;
+    }
+    .dropdown {
+        padding: 20px 0;
+    }
+    .col-md-12 {
+        padding: 0;
+    }
+    .earned-section, .ambassador-section {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .col-down {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .banner-heading, .contact-heading, .common-heading {
+        font-size: 30px !important;
+    }
+    .banner-desc {
+        margin: 20px 10px 10px 0;
+    }
+    .sec2-heading {
+        font-size: 30px;
+    }
+    .details-head .common-heading {
+        font-size: 20px;
+    }
+    .sec2-desc {
+        margin-top: 10px;
+    }
+    .contact-left img, .earned-section div img {
+        width: 100%;
+        height: 100%;
+    }
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+.navbar-nav {
+    display: inline-block !important;
+}
+
+.navbar-nav .nav-item {
+    display: inline;
+    margin: auto;
+    width: 100%;
+    padding-left: 7.2%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbar-nav .nav-link, .signup-btn {
+    padding: 0px !important;
+}
+
+@media only screen and (max-width:400px) {
+    .logo-bg {
+        width: 450px;
+        height: 150px;
+    }
+    .logo-img {
+        width: 160px;
+        height: 65px;
+    }
+    .sub-sec {
+        padding: 0;
+    }
+}
+
+.profile-block-link {}
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #ffffff;
+    color: pink;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    border-radius: 10px;
+}
