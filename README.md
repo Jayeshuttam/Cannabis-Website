@@ -6,7 +6,7 @@ Preview Images
 ![AdminEdit Feature](https://user-images.githubusercontent.com/38659267/115028342-bbe9af00-9e92-11eb-8f38-d5ee0e026241.png)
 
 
-![Adminpanel features](https://user-images.githubusercontent.com/38659267/115028343-bc824580-9e92-11eb-9ef6-64a9a26440a3.png)
+
 
 ![cannabis](https://user-images.githubusercontent.com/38659267/115028345-bc824580-9e92-11eb-92eb-9a17240522e1.png)
 
