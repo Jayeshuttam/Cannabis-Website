@@ -25,6 +25,10 @@ Preview Images
 
 ![AddProduct](https://user-images.githubusercontent.com/38659267/115028366-bf7d3600-9e92-11eb-9d81-4208cb96223c.png)
 
+Technologies:
+PHP
+HTMl
+CSS
 
 
 
